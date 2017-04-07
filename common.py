@@ -5,7 +5,7 @@ the program main() function, and argument parsing.
 
 import argparse
 
-SERVER_RECV_BUFFER_SIZE = 4096
+SERVER_RECV_BUFFER_SIZE = 16384
 
 def main(Measurement):
     """
@@ -46,4 +46,3 @@ def parse_args(description):
     parser.add_argument("--listen_port", type=int, default=8888)
     args = parser.parse_args()
     return args
-
